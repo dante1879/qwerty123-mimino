@@ -48,27 +48,27 @@ hr {
 
 @font-face {
   font-family: 'Montserrat-Regular';
-  src: url(./src/fonts/Montserrat-Regular.ttf) format('ttf');
+  src: url(/src/fonts/Montserrat-Regular.ttf) format('ttf');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Montserrat-Medium';
-  src: url(./src/fonts/Montserrat-Regular.ttf) format('ttf');
+  src: url(/src/fonts/Montserrat-Regular.ttf) format('ttf');
   font-weight: 500;
 }
 @font-face {
   font-family: 'Montserrat-SemiBold';
-  src: url(./src/fonts/Montserrat-Regular.ttf) format('ttf');
+  src: url(/src/fonts/Montserrat-Regular.ttf) format('ttf');
   font-weight: 600;
 }
 @font-face {
   font-family: 'Montserrat-Bold';
-  src: url(./src/fonts/Montserrat-Regular.ttf) format('ttf');
+  src: url(/src/fonts/Montserrat-Regular.ttf) format('ttf');
   font-weight: 700;
 }
 
-// @font-face {
-//   font-family: 'filmp3';
-//   src: url(./src/fonts/filmp3.ttf) format('ttf');
-//   font-weight: 700;
-// }
+@font-face {
+  font-family: 'filmp3';
+  src: url(/src/fonts/filmp3.ttf) format('ttf');
+  font-weight: 700;
+}
