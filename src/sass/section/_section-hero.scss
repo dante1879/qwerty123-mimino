@@ -1,0 +1,48 @@
+.section-hero {
+  outline: 2px solid tomato;
+  max-width: 414px;
+  min-height: 740px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)),
+    url('/src/images/hero/hero-homepage-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url('/src/images/hero/hero-homepage-mobile@2x.jpg');
+  }
+
+}
+
+
+
+.section-hero__subtitle {
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+.section-hero__text {
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 1.16;
+}
