@@ -1,0 +1,111 @@
+.details-rest {
+  width: 414px;
+  height: 735px;
+  background-size: 414px 735px;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('/src/images/details-restaurant/mob/restaurant.jpg');
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('/src/images/details-restaurant/mob/restaurant@2x.jpg');
+    }
+  }
+
+  &__content {
+    margin-left: 140px;
+  }
+  &__logo {
+    padding-top: 24px;
+    margin: 0;
+    font-family: 'Film P3', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #ffffff;
+    letter-spacing: 0.3em;
+  }
+  &__title {
+    padding-bottom: 12px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+  }
+  &__text {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #bababa;
+    letter-spacing: 0.02em;
+  }
+}
+.rest-btn {
+  width: 236px;
+  height: 48px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__table {
+    margin-bottom: 16px;
+  }
+
+  &__table,
+  &__menu {
+    width: 236px;
+    height: 48px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #f3c653;
+    font-size: 16px;
+    line-height: 1.25px;
+    &:hover {
+      background: #ffffff;
+    }
+  }
+}
+.rest-galery {
+  margin-top: 48px;
+  &__img {
+    display: flex;
+    justify-content: end;
+    margin-right: -15px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__item {
+    margin-left: 19px;
+  }
+}
+.arrows-btn {
+  margin-top: 24px;
+  margin-left: 27px;
+
+  &__icon:not(:last-child) {
+    margin-right: 34px;
+  }
+}
