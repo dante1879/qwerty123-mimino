@@ -11,18 +11,92 @@
     <div class="rest-galery">
       <ul class="rest-galery__img">
         <li class="rest-galery__item">
-          <img
-            src="/src/images/details-restaurant/mob/frame_1.jpg"
-            width="270"
-            alt="food"
-          />
+          <picture>
+            <sourse
+              srcset="
+            /src/images/details-restaurant/desk/frame-270.jpg 1x,
+            /src/images/details-restaurant/desk/frame-540.jpg 2x
+            "
+              media="(min-width: 1280px)"
+            />
+            <sourse
+              srcset="
+            /src/images/details-restaurant/tablet/frame-270.jpg 1x,
+            /src/images/details-restaurant/tablet/frame-540.jpg 2x
+            "
+              media="(min-width: 1024px)"
+            />
+            <sourse
+              srcset="
+            /src/images/details-restaurant/mob/frame-274.jpg 1x,
+            /src/images/details-restaurant/mob/frame-548.jpg 2x
+            "
+              media="(max-width: 1023px)"
+            />
+            <img
+              src="/src/images/details-restaurant/mob/frame-274.jpg"
+              alt="food"
+            />
+          </picture>
         </li>
         <li class="rest-galery__item">
-          <img
-            src="/src/images/details-restaurant/mob/short.jpg"
-            width="80"
-            alt="food"
-          />
+          <picture>
+            <sourse
+              srcset="
+            /src/images/details-restaurant/desk/frame-162.jpg 1x,
+            /src/images/details-restaurant/desk/frame-324.jpg 2x
+            "
+              media="(min-width: 1280px)"
+            />
+            <sourse
+              srcset="
+            /src/images/details-restaurant/tablet/frame-162.jpg 1x,
+            /src/images/details-restaurant/tablet/frame-324.jpg 2x
+            "
+              media="(min-width: 1024px)"
+            />
+            <sourse
+              srcset="
+            /src/images/details-restaurant/mob/frame-80.jpg 1x,
+            /src/images/details-restaurant/mob/frame-160.jpg 2x
+            "
+              media="(max-width: 1023px)"
+            />
+            <img
+              src="/src/images/details-restaurant/mob/frame-80.jpg"
+              alt="food"
+            />
+          </picture>
+        </li>
+        <li class="rest-galery__item mob-hidden">
+          <picture>
+            <sourse
+              srcset="
+            /src/images/details-restaurant/desk/frame3.jpg 1x,
+            /src/images/details-restaurant/desk/frame3@2x.jpg 2x
+            "
+              media="(min-width: 1280px)"
+            />
+            <sourse
+              srcset="
+            /src/images/details-restaurant/tablet/fram-162.jpg 1x,
+            /src/images/details-restaurant/tablet/fram-324.jpg 2x
+            "
+              media="(min-width: 1024px)
+              "
+            />
+            <sourse
+              srcset="
+            /src/images/details-restaurant/mob/frame-80.jpg 1x,
+            /src/images/details-restaurant/mob/frame-160.jpg 2x
+            "
+              media="(max-width: 1023px)"
+            />
+            <img
+              src="/src/images/details-restaurant/tablet/fram-162.jpg"
+              alt="food"
+            />
+          </picture>
         </li>
       </ul>
     </div>

@@ -1,3 +1,6 @@
+.container {
+  padding: 0 15px;
+}
 .details-rest {
   width: 414px;
   height: 735px;
@@ -93,7 +96,7 @@
   &__img {
     display: flex;
     justify-content: end;
-    margin-right: -15px;
+    margin-right: -35px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -108,4 +111,11 @@
   &__icon:not(:last-child) {
     margin-right: 34px;
   }
+  // &__icon:hover {
+  //   background: #f3c653;
+  // }
+}
+.mob-hidden {
+  overflow: hidden;
+  // @media  overflow: visible;
 }
