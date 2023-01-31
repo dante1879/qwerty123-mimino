@@ -1,0 +1,272 @@
+@mixin font($size, $height, $weight, $spacing) {
+	font-size: $size;
+	line-height: $height;
+	font-weight: $weight;
+	letter-spacing: $spacing;
+}
+
+// Медіа запити
+@mixin mobile {
+	@media screen and (min-width: 414px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: 1280px) {
+		@content;
+	}
+}
+
+.container {
+	min-width: 320px;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mobile {
+		max-width: 414px;
+	}
+
+	@include tablet {
+		max-width: 1024px;
+		padding: 0 47px;
+	}
+
+	@include desktop {
+		max-width: 1280px;
+		padding: 0 85px;
+	}
+}
+
+.hotel-rooms__container {
+	position: relative;
+
+	@media screen and (max-width: 1023px) {
+		overflow: hidden;
+	}
+}
+
+
+.hotel-rooms__item {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background-color: #fffdee;
+
+	@include tablet {
+			padding-top: 62px;
+			padding-bottom: 40px;	
+	}
+
+	@include desktop {
+			padding-top: 72px;
+	}
+    
+	
+	&:nth-child(2n) {
+		background-color: #f0ecd6;
+	  }
+  
+  
+  }
+
+
+//   MIMIHO
+  .hotel-rooms__logo {
+
+	color: #494848;
+	margin-bottom: 32px;
+
+	@include tablet {
+			margin-bottom: 62px;
+	  }
+	  
+	  @include desktop {
+			margin-bottom: 72px;
+	  }
+
+	//   Трьохмісна кімната - дзеркальне розташування Лого праворуч
+	  .hotel-rooms__item:nth-child(2n) & {
+		text-align: right;
+		margin-right: -10px;
+
+		@include tablet {
+		margin-right: -20px;
+		}
+  }
+}
+
+   .hotel-rooms__subtitle {
+	margin-bottom: 8px;
+    
+	@include tablet {
+		margin-bottom: 4px;
+	  }
+
+	.hotel-rooms__item:nth-child(2n) & {	
+	  text-align: right;
+	}
+  }
+
+
+  .hotel-rooms__title {
+	font-family: 'TimesNewRoman', 'sans-serif';
+	@include font(24px, 1.17, 700, 0.05em);
+    text-transform: uppercase;
+
+	color: #000000;
+
+	margin-bottom: 12px;
+
+	@include tablet {
+	  font-size: 30px;
+	  line-height: 1.13;
+	  margin-bottom: 16px;
+	  }
+	  
+	  @include desktop {
+		font-size: 36px;
+		margin-bottom: 24px;
+	  }
+
+	.hotel-rooms__item:nth-child(2n) & {
+		text-align: right;
+	}
+  }
+  
+  .hotel-rooms__title-low {
+	text-transform: lowercase;
+  }
+
+  .hotel-rooms__desc {
+	display: block;
+	max-width: 242px;
+	margin-bottom: 32px;
+
+	font-family: 'Montserrat-SemiBold';
+	@include font(12px, 1.25, 600, 0.02em);
+
+	color: #7A7A7A;
+	
+	@include tablet {
+		font-size: 16px;
+		max-width: 439px;
+		margin-bottom: 176px;
+		}
+
+	@include desktop {
+		margin-bottom: 188px;
+	}	
+  
+
+	.hotel-rooms__item:nth-child(2n) & {
+	 @media screen and (max-width: 413px) {
+		margin-left: auto;
+	 }
+	 
+	@include mobile {
+	margin-left: 83px;	
+	}
+			 
+	 @include tablet {
+	margin-left: 543px;
+	}
+	
+	@include desktop {
+		margin-left: auto;
+	}
+	}
+  }
+
+  .hotel-rooms__img {
+	margin-left: auto;
+	margin-bottom: 32px;
+
+	box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 2px;
+	
+	@include tablet {
+	position: absolute;
+	top: -94px;
+	left: 512px;
+	}
+
+	@include desktop {
+		top: -104px;
+		left: 640px;
+	}
+
+	.hotel-rooms__item:nth-child(2n) & {
+		margin-left: 0;
+
+		@include tablet {
+			position: absolute;
+			top: -94px;
+			left: 112px;
+			}
+		@include desktop {
+			top: -104px;
+			left: 180px;
+		} 
+	}
+  }
+
+  .hotel-rooms__wrap {
+	min-width: 0;
+	@include tablet {
+		
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+		}
+
+	.hotel-rooms__item:nth-child(2n) & {
+	  flex-direction: row-reverse;
+	}
+  }
+
+  .hotel-rooms__item-btn:not(:last-child) {
+	margin-bottom: 16px;
+  }
+
+.hotel-rooms__btn {
+	margin: 0 auto;
+}
+
+.subtitle {
+	font-family: 'TimesNewRoman','sans-serif';
+	font-weight: 400;
+	line-height: 1.15;
+	color:#7A7A7A;
+	font-size: 20px;
+
+	@media screen and (min-width: 1024px) {
+		font-size: 32px;
+	}
+}
+
+.logo {
+	font-family: 'filmp3';
+	text-transform: uppercase;
+	@include font(40px, 1.08, 700, 0.3em);
+
+	@include tablet {
+		@include font(64px, null, null, null);
+	}
+}
+
+
+
+
+
+
+   
+
+
+  
