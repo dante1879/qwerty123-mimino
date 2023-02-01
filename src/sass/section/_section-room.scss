@@ -1,166 +1,173 @@
-
-
 .room-page{
-    background-color: #FFFDEE;
-    }
-    .room-page__box {
-      
-      margin: 0 auto;
-    @media screen and (min-width: 414px) {
-      width: 414px;
-    }
-    @media screen and (min-width: 1024px) {
-      width: 1024px;
-    }
-    
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-    }
-    }
-    
-    .room-page__item {
-        width: 100%;
-        @media screen and (max-width: 1024px) {
-        &:not(:first-child) {
-          margin-top: 32px;
-        }
-      }
-        @media screen and (min-width: 1024px) {
-          &:not(:first-child) {
-            margin-top: 32px;
-          }
-        }
-        @media screen and (min-width: 1280px) {
-          &:not(:first-child) {
-            margin-top: 32px;
-          }
-        }
-    }
-    .room-page__list {
-      @media screen and (min-width: 1024px) {
-    
-      
-      }
-    }
-    .room-page__tablet1 {
-      @media screen and (min-width: 1024px) {
-    
-      column-count: 1;
-    }
-    
-    }
-    .room-page__tablet2 {
-      @media screen and (min-width: 1024px) {
-     
-    
-        column-count: 2;
-      }
-    }
-    .room-page__tablet3 {
-      @media screen and (min-width: 1024px) {
-     
-        column-count: 2;
-      }
-    }
-    .room-page__tablet4 {
-      @media screen and (min-width: 1024px) {
-    
-        column-count: 1;
-      }
-    }
-    .room-page__tablet5 {
-      @media screen and (min-width: 1024px) {
-    
-        column-count: 2;
-      }
-    }
-    .room-page__tablet6 {
-      @media screen and (min-width: 1024px) {
-      
-        column-count: 1;
-      }
-    }
-    .room-page__title {
-      @media screen and (min-width: 1024px) {
-     margin-bottom: 16px;
-      }
-     
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
-    
-    
-    }
-    
-    
-    
-    
-    .room-page__text {
-    
-      margin-top: 16px;
-      margin-bottom: 0;
-        width: 100%;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 1.25px;
-        color: #7A7A7A; 
-        @media screen and (min-width: 1024px) {
-          max-width: 400px;
-      margin: 0;
-        }
-    }
-    .text--center {
-      max-width: 757px;
-    }
-    
-    .btn__booking {
-      display: block;
+  background-color: #FFFDEE;
+
+&__box {
+margin: 0 auto;
+@media screen and (min-width: 414px) {
+width: 414px;
+}
+@media screen and (min-width: 1024px) {
+width: 1024px;
+}
+@media screen and (min-width: 1280px) {
+width: 1280px;
+}
+}
+
+&__text {
+width: 100%;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 1.25px;
+color: #7A7A7A; 
+@media screen and (max-width: 1024px) {
+  margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  max-width: 400px;
+
+}
+}
+
+&__title {
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+@media screen and (min-width: 1024px) {
+  margin-bottom: 16px;
+   }
+}
+
+&__item {
+width: 100%;
+@media screen and (max-width: 1024px) {
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+}
+  @media screen and (min-width: 1024px) {
+    &:not(:first-child) {
       margin-top: 32px;
-      margin-bottom: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      align-items: center;
-      @media screen and (min-width: 414px) {
-        width: 384px;
-      }
-      width: 384px;
-      height: 64px;
-      color:  #FFFFFF;
-      background: #000000;
-    border: 1px solid #F3C653;
-    border-radius: 25px;
     }
-    .btn__back {
-      display: block;
-      margin-left: auto;
-        margin-right: auto;
-      justify-content: center;
-      border: none; 
-      outline: none;
-      background: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 1.25px;
-    color: #C79002;
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:first-child) {
+      margin-top: 32px;
     }
-    .btn__back--icon {
-      margin-left: 12px;
-      fill: currentColor; 
+  }
+}
+
+&__tablet1 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+  column-count: 1;
+}
+
+}
+&__tablet2 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 2;
+  }
+}
+&__tablet3 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 2;
+  }
+}
+&__tablet4 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 1;
+  }
+}
+&__tablet5 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 2;
+  }
+}
+&__tablet6 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 1;
+  }
+}
+
+  }
+ 
+  
+  
+  .text--center {
+    max-width: 757px;
+  }
+  
+  
+  .room-btn {
+@media screen and (max-width: 1023px) {
+display: flex;
+justify-content: center;
+align-content: center;
+flex-wrap: wrap;
+flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+      margin-right: 47px;
     }
-    
-    .room-page__btn {
-      @media screen and (min-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-        align-items: flex-end;
-        margin-right: 47px;
-      }
+@media screen and (min-width: 1280px) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+      margin-right: 47px;
     }
+
+  &__booking {
+margin-top: 32px;
+margin-bottom: 20px;
+padding: 20px 43px;
+background: #000000;
+border: 1px solid #F3C653;
+border-radius: 25px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+
+&:hover,
+&:focus {
+  background: #F3C653;
+  color: #000000;
+}
+  }
+
+&__back {
+  
+display: inline-block;
+  border: none; 
+  outline: none;
+  background: none;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 1.25px;
+color: #C79002;
+}
+&__icon {
+  margin-left: 12px;
+  fill: currentColor; 
+}
+  }
+  
