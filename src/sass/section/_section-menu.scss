@@ -1,5 +1,7 @@
 .menu {
     background-color: #F0ECD6;
+    display: flex;
+    justify-content: center;
 
     &__title {
         font-family: 'Times New Roman';
@@ -244,7 +246,10 @@
         padding-top: 58px;
         padding-bottom: 60px;
         padding-left: 85px;
-        padding-right: 85px;
+        padding-right: 85px;  
+    }
+
+    .menu__main-container {
         max-width: 1280px;
         width: 100%;
     }
@@ -252,23 +257,28 @@
 
 @media (min-width: 1024px) and (max-width: 1279px){
     .menu {
-        max-width: 1024px;
-        width: 100%;
         padding-top: 58px;
         padding-bottom: 64px;
         padding-left: 47px;
         padding-right: 47px;
     }
+
+    .menu__main-container {
+        max-width: 1024px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 1023px) {
     .menu {
-        max-width: 414px;
-        width: 100%;
         padding-top: 32px;
         padding-bottom: 32px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .menu__main-container {
+        width: 414px;
     }
 
     .menu__button-container {
@@ -289,7 +299,14 @@
 @media (max-width: 1023px) {
     .menu__dishes {
         width: 384px;
+        width:100%;
         margin-bottom: 16px;
+    }
+
+    .menu__main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 }
 
@@ -312,3 +329,5 @@
         align-items: stretch;
     }
 }
+
+
