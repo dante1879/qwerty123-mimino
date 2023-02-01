@@ -1,0 +1,173 @@
+.room-page{
+  background-color: #FFFDEE;
+
+&__box {
+margin: 0 auto;
+@media screen and (min-width: 414px) {
+width: 414px;
+}
+@media screen and (min-width: 1024px) {
+width: 1024px;
+}
+@media screen and (min-width: 1280px) {
+width: 1280px;
+}
+}
+
+&__text {
+width: 100%;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 1.25px;
+color: #7A7A7A; 
+@media screen and (max-width: 1024px) {
+  margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+  max-width: 400px;
+
+}
+}
+
+&__title {
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+@media screen and (min-width: 1024px) {
+  margin-bottom: 16px;
+   }
+}
+
+&__item {
+width: 100%;
+@media screen and (max-width: 1024px) {
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+}
+  @media screen and (min-width: 1024px) {
+    &:not(:first-child) {
+      margin-top: 32px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:first-child) {
+      margin-top: 32px;
+    }
+  }
+}
+
+&__tablet1 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+  column-count: 1;
+}
+
+}
+&__tablet2 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 2;
+  }
+}
+&__tablet3 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 2;
+  }
+}
+&__tablet4 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 1;
+  }
+}
+&__tablet5 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 2;
+  }
+}
+&__tablet6 {
+  margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    column-count: 1;
+  }
+}
+
+  }
+ 
+  
+  
+  .text--center {
+    max-width: 757px;
+  }
+  
+  
+  .room-btn {
+@media screen and (max-width: 1023px) {
+display: flex;
+justify-content: center;
+align-content: center;
+flex-wrap: wrap;
+flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+      margin-right: 47px;
+    }
+@media screen and (min-width: 1280px) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+      margin-right: 47px;
+    }
+
+  &__booking {
+margin-top: 32px;
+margin-bottom: 20px;
+padding: 20px 43px;
+background: #000000;
+border: 1px solid #F3C653;
+border-radius: 25px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+
+&:hover,
+&:focus {
+  background: #F3C653;
+  color: #000000;
+}
+  }
+
+&__back {
+  
+display: inline-block;
+  border: none; 
+  outline: none;
+  background: none;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 1.25px;
+color: #C79002;
+}
+&__icon {
+  margin-left: 12px;
+  fill: currentColor; 
+}
+  }
+  
