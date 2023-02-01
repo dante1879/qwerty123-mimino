@@ -1,4 +1,4 @@
-.container {
+.container-rest {
   padding: 0 15px;
 }
 .details-rest {
@@ -89,7 +89,7 @@
   &__logo {
     padding-top: 24px;
     margin: 0;
-    font-family: 'Film P3', sans-serif;
+    font-family: 'filmp3', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -104,7 +104,7 @@
   &__title {
     margin: 0;
     padding-top: 12px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -119,7 +119,7 @@
   &__text {
     margin: 0;
     padding-top: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-SemiBold', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -155,7 +155,7 @@
     border: 2px solid #ffffff;
     border-radius: 25px;
     background: rgba(0, 0, 0, 0.4);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     color: #f3c653;
@@ -166,6 +166,10 @@
     }
   }
   @media screen and (min-width: 1024px) {
+    background: #000000;
+  }
+  @media screen and (min-width: 1280px) {
+    background: rgba(0, 0, 0, 0.4);
   }
 }
 .rest-galery {
