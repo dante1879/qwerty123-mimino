@@ -1,8 +1,10 @@
 @import './common';
 @import './base';
-// @import './header';
-// @import './example';
-// @import './section/section';
+@import './header';
+@import './example';
+@import './section/section';
 @import './footer';
-// @import './modals';
-// @import './section/section-room';
+@import './modals';
+@import './modal-room-booking';
+@import './modal-room-price';
+@import './modal-table-booking';
