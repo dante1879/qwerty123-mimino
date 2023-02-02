@@ -58,9 +58,11 @@ hr {
 }
 
 @font-face {
-  font-family: 'filmp3';
-  src: url(/src/fonts/filmp3.ttf) format('ttf');
+  font-family: 'FilmP3';
+  font-style: normal;
   font-weight: 700;
+  src: local(''), url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff');
 }
 
 p,
