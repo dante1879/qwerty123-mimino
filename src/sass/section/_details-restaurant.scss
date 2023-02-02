@@ -134,14 +134,17 @@
   }
 }
 .rest-btn {
+  // order: 2;
   width: 236px;
   height: 48px;
   margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 1024px) {
-    margin-top: 75px;
-    margin-right: 29px;
+    margin: 195 0 0 32;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 195 0 0 70;
   }
 
   &__table {
@@ -172,71 +175,78 @@
     background: rgba(0, 0, 0, 0.4);
   }
 }
-.rest-galery {
-  margin-top: 48px;
-  &__img {
-    display: flex;
-    justify-content: end;
-    margin-right: -15px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    @media screen and (min-width: 1024px) {
-      margin-right: 35px;
-    }
-  }
-  &__item {
-    margin-left: 19px;
-    @media screen and (min-width: 1024px) {
-      margin-left: 0;
-      margin-right: 0px;
-      &:not(:first-child) {
-        margin-left: 34px;
-      }
-    }
-    @media screen and (min-width: 1280px) {
-      &:not(:first-child) {
-        margin-left: 86px;
-      }
-    }
-  }
-}
-.arrows-btn {
-  margin-top: 24px;
-  margin-left: 27px;
-  @media screen and (min-width: 1024px) {
-    margin-left: 0px;
-  }
 
-  &__icon:not(:last-child) {
-    margin-right: 34px;
-  }
-}
-.mob-hidden {
-  display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
-  }
-}
-.tablet-hidden {
-  @media screen and (min-width: 1024px) {
-    display: none;
-  }
-}
-.desktop-hidden {
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
-}
-.shown {
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-}
-.wrap {
+.details-rest__wrap {
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    justify-content: left;
   }
+}
+.slider-rest {
+  // order: 3;
+  max-width: 710px;
+  margin: 48px -15px 0 -15px;
+  @media screen and (min-width: 1024px) {
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 927px;
+  }
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 270px !important;
+  margin: 0;
+  padding-bottom: 16px;
+  // width: content;
+  color: #fff;
+  font-size: 32px;
+  // background-color: red;
+  transition: ease-in-out 0.5s;
+}
+.swiper-slide-next,
+.slide-next {
+  img {
+    object-fit: cover;
+    height: 270px;
+  }
+  // краще виставляти у %
+  // зараз 17.3%  дорівнює 200px
+  max-width: 162px;
+  // width: 17.3%;
+}
+.slide-next {
+  @media screen and (min-width: 1280px) {
+    max-width: 270px;
+  }
+}
+
+.swiper-wrapper {
+  margin: 0;
+  padding-left: -70px;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
+}
+.swiper-inner {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.swiper-btns {
+  display: flex;
+  gap: 32px;
+  padding-left: 40px;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
+}
+.swiper-btn {
+  background-color: transparent;
+  border: none;
 }
