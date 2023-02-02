@@ -1,19 +1,9 @@
-// .container {
-//   max-width: 1200px;
-//   padding: 0 20px;
-//   margin: 0 auto;
-// }
 
-// .section {
-//   padding: 60px 0;
-// }
-
-// .flex-box {
-//   display: flex;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   gap: 20px;
-// }
+.flex-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .visually-hidden {
   position: absolute;
@@ -22,25 +12,24 @@
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-//   white-space: nowrap;
-//   clip-path: inset(100%);
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
+hr {
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+}
 
-// hr {
-//   width: 100%;
-//   height: 5px;
-//   background-color: #000;
-// }
-
-// .swiper {
-//   &-wrapper {
-//     list-style: none;
-//   }
-// }
+.swiper {
+  &-wrapper {
+    list-style: none;
+  }
+}
 
 .hidden {
   visibility: hidden;
@@ -69,7 +58,45 @@
 }
 
 @font-face {
-  font-family: 'filmp3';
-  src: url(/src/fonts/filmp3.ttf) format('ttf');
+  font-family: 'FilmP3';
+  font-style: normal;
   font-weight: 700;
+  src: local(''), url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff');
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
