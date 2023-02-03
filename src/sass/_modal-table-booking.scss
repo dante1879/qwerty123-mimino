@@ -7,7 +7,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms $transitionCubic;
+    transition: opacity 250ms cubic-bezier(.4, 0, .2, 1);
     overflow-y: scroll;
 
     &--hidden {
@@ -31,17 +31,18 @@
     @media screen and (min-width: 1024px) {
             max-width: 712px;
             width: 712px;
+            height: 522px;
             padding: 60px;
-    }
+    }}
     
    
-    .backdrop--hidden & {
+    .backdrop--hidden {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0);
     }
-}
+
 
 .modal-table__label {
 font-family: 'Montserrat';
@@ -84,7 +85,7 @@ color: #C79002;
         }
     }
 }
-.container {
+.modal-container {
     @media screen and (min-width: 1024px) {
         display: flex;
         flex-direction: column;
@@ -189,7 +190,7 @@ select {
     appearance: none;
     -moz-appearance:none; 
     -webkit-appearance:none; 
-    background-image: url(/images/arrow-down.svg);
+    background-image: url(/src/images/table-booking/arrow-down.svg);
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: right 17px top 15px;
