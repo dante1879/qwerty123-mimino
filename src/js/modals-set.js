@@ -4,7 +4,6 @@ function funcPopup() {
     const popupLinks = document.querySelectorAll('.popup-link');
     const lockPadding = document.querySelectorAll(".lock-padding");
     const popups = document.querySelectorAll('.popup');
-console.log(popupLinks  )
     let unlock = true;
     const timeout = 800;
 
@@ -42,7 +41,6 @@ console.log(popupLinks  )
     }
 
     function popupOpen(curentPopup) {
-console.log("trigered")
 
         if (curentPopup && unlock) {
             const popupActive = document.querySelector('.popup.open');
