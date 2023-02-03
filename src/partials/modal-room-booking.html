@@ -1,0 +1,69 @@
+ <div class="book-room-modal popup"  data-popup-target="room-booking-modal">
+        <button type="button" class="close close-popup" aria-label="Кнопка закриття модального вікна" data-modal-close>
+          <svg class="close__icon">
+            <use href="/src/images/modal/modal-icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form class="form">
+          <b class="form__title">ЗАБРОНЮВАТИ НОМЕР</b>
+<div class="flex-container">
+      <div class="form__container">
+          <div class="form__field">
+              <input class="form__input" 
+                type="text" 
+                name="user_name" 
+                id="user_name"
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,}"
+                required 
+                placeholder="Ваше ім’я"/>
+              <label for="user_name" class="modal-room__label">На кого забронювати номер?</label>
+            </div>
+
+          <div class="form__field">
+              <input class="form__input" 
+                type="tel" 
+                name="phone_number" 
+                id="phone_number" 
+                required
+                pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){12}(\s*)?"
+                placeholder="+38 (___) ___-__-__" />
+            <label for="phone_number" class="modal-room__label">Номер телефону</label>
+          </div>
+          </div>
+
+          <div class="form__container">
+            <div class="form__field">
+            <select name="people" class="form__input" id="number-of-persons">
+                <option value="" selected>Двомісний номер Люкс</option>
+                <option value="">Трьохмісний номер</option>
+                <option value="">Двомісний номер</option>
+            </select> 
+            <label for="number-of-persons" class="modal-room__label">Категорія номеру</label>
+          </div>
+          </div>
+
+          <div class="form__container">
+          <div class="form__field">
+            <select name="date" class="form__input" id="booking-date">
+            <option value="" selected>Сьогодні</option>
+            <option value="">05.02.2023</option>
+            <option value="">06.02.2023</option>
+            </select>
+           <label for="booking-date" class="modal-room__label">Дата заїзду</label>
+          </div>
+
+          <div class="form__field">
+            <select name="date" class="form__input" id="booking-date">
+            <option value="" selected>Завтра</option>
+            <option value="">07.02.2023</option>
+            <option value="">08.02.2023</option>
+            </select>
+           <label for="booking-date" class="modal-room__label">Дата виїзду</label>
+          </div>
+          </div>
+          </div>
+          
+          <button type="submit" class="form__button">ОФОРМИТИ БРОНЮВАННЯ</button>
+        </form>
+      </div>
