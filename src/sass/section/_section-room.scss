@@ -121,16 +121,21 @@ color: #000000;
 
 .room-btn {
   display: flex;
-  align-items: center;
   flex-direction: column;
   margin-top: 52px;
+ @media screen and (max-width: 1023px) {
+  justify-content: center;
+ }
+ @media screen and (min-width: 1024px) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 
-  @media screen and (min-width: 1024px) {
-    justify-content: flex-end;
-    align-items: flex-end;
-
-  }
+ }
   &__booking {
+   @media screen and (min-width: 1024px){
+    font-size: 24px;
+   }
 padding: 20px 43px;
 background: #000000;
 border: 1px solid #F3C653;
@@ -139,10 +144,12 @@ color: #FFFFFF;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 24px;
+font-size: 100%;
 line-height: 24px;
   }
 &__link {
+  
+
   margin-top: 20px;
   text-decoration: none;
   font-family: 'Montserrat';
@@ -154,7 +161,7 @@ letter-spacing: 1.25px;
 color: #C79002;
 }
 &__icon {
-  margin-left: 12px;
+  
   fill: currentColor; 
 } 
 }
