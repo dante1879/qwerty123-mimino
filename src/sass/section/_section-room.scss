@@ -148,14 +148,16 @@ font-size: 100%;
 line-height: 24px;
   }
 &__link {
-  
+  @media screen and (min-width: 1024px){
+    font-size: 20px;
+   }
 
   margin-top: 20px;
   text-decoration: none;
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
+font-size: 100%;
 line-height: 20px;
 letter-spacing: 1.25px;
 color: #C79002;
