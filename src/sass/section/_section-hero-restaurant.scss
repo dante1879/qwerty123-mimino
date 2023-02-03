@@ -1,6 +1,6 @@
 .section-hero-restaurant{
   position: relative;
-  max-width: 414px;
+  // max-width: 414px;
   min-height: 740px;
   padding-top: 181px;
   // padding-left: 15px;
@@ -11,7 +11,7 @@
       rgba(0, 0, 0, 0.65)),
     url('/src/images/hero/hero-restaurant-mobile.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -29,7 +29,7 @@
 @media screen and (min-width: 1024px) {
   .section-hero-restaurant {
 
-    max-width: 1024px;
+    // max-width: 1024px;
     min-height: 720px;
     padding-top: 188px;
     // padding-left: 47px;
@@ -58,7 +58,7 @@
 @media screen and (min-width: 1280px) {
   .section-hero-restaurant {
     position: relative;
-    max-width: 1280px;
+    // max-width: 1280px;
     min-height: 720px;
     padding-top: 164px;
     // padding-left: 85px;
@@ -89,6 +89,8 @@
   width: 414px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -352,9 +354,7 @@
 
   @media screen and (min-width: 1024px) {
     display: flex;
-
+    align-items: center;
     justify-content: space-between;
   }
-
-
 }
