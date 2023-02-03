@@ -1,0 +1,271 @@
+.container-rest {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 414px;
+  height: 735px;
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    height: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
+.details-rest {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 414px;
+  background-size: 414px 735px;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('/src/images/details-restaurant/mob/restaurant.jpg');
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('/src/images/details-restaurant/mob/restaurant@2x.jpg');
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    min-width: 1024px;
+    background-color: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('/src/images/details-restaurant/tablet/restaurant.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url('/src/images/details-restaurant/tablet/restaurant@2x.jpg');
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    // background-size: 1280px 620px;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('/src/images/details-restaurant/desk/restaurant.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url('/src/images/details-restaurant/desk/restaurant@2x.jpg');
+      }
+    }
+  }
+  &__content {
+    margin-left: 140px;
+
+    @media screen and (min-width: 1024px) {
+      margin-left: 263px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-left: 323px;
+      margin-right: 317px;
+    }
+  }
+  &__logo {
+    padding-top: 24px;
+    margin: 0;
+    font-family: 'filmp3', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #ffffff;
+    letter-spacing: 0.3em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 48px;
+      font-size: 64px;
+    }
+  }
+  &__title {
+    margin: 0;
+    padding-top: 12px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 16px;
+      font-size: 24px;
+    }
+  }
+  &__text {
+    margin: 0;
+    padding-top: 20px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #bababa;
+    letter-spacing: 0.02em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 8px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+.rest-btn {
+  // order: 2;
+  width: 236px;
+  height: 48px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 1024px) {
+    margin: 195 0 0 32;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 195 0 0 70;
+  }
+
+  &__table {
+    margin-bottom: 16px;
+  }
+
+  &__table,
+  &__menu {
+    width: 236px;
+    height: 48px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #f3c653;
+    font-size: 16px;
+    line-height: 1.25px;
+    &:hover {
+      background: #ffffff;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    background: #000000;
+  }
+  @media screen and (min-width: 1280px) {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.details-rest__wrap {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+  }
+}
+.slider-rest {
+  // order: 3;
+  max-width: 420px;
+  margin: 48px -15px 0 -15px;
+  @media screen and (min-width: 1024px) {
+    max-width: 700px;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 927px;
+  }
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 270px !important;
+  margin: 0;
+  padding-bottom: 16px;
+  // width: content;
+  color: #fff;
+  font-size: 32px;
+  // background-color: red;
+  transition: ease-in-out 0.5s;
+}
+.swiper-slide-next,
+.slide-next {
+  img {
+    object-fit: cover;
+    height: 270px;
+  }
+  // краще виставляти у %
+  // зараз 17.3%  дорівнює 200px
+  max-width: 162px;
+  // width: 17.3%;
+}
+.slide-next {
+  @media screen and (min-width: 1280px) {
+    max-width: 270px;
+  }
+}
+
+.swiper-wrapper {
+  margin: 0;
+  padding-left: -70px;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
+}
+.swiper-inner {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.swiper-btns {
+  display: flex;
+  gap: 32px;
+  padding-left: 40px;
+  fill: #fff;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
+}
+.swiper-btn {
+  background-color: transparent;
+  border: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  &:hover svg {
+    fill: #f3c653;
+  }
+}

@@ -4,9 +4,7 @@ function funcPopup() {
     const popupLinks = document.querySelectorAll('.popup-link');
     const lockPadding = document.querySelectorAll(".lock-padding");
     const popups = document.querySelectorAll('.popup');
-
     let unlock = true;
-
     const timeout = 800;
 
     if (popupLinks.length > 0) {
@@ -43,6 +41,7 @@ function funcPopup() {
     }
 
     function popupOpen(curentPopup) {
+
         if (curentPopup && unlock) {
             const popupActive = document.querySelector('.popup.open');
             if (popupActive) {
