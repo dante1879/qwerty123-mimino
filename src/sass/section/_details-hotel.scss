@@ -1,0 +1,263 @@
+.container-hotel {
+  padding: 0 15px;
+}
+.details-hotel {
+  width: 414px;
+  height: 735px;
+  background-size: 414px 735px;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/src/images/details-hotel/mob/hotel.jpg');
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url('/src/images/details-hotel/mob/hotel@2x.jpg');
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    height: 620px;
+    // background-size: 1024px 620px;
+    background-color: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('/src/images/details-hotel/tablet/hotel.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url('/src/images/details-hotel/tablet/hotel@2x.jpg');
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    // background-size: 1280px 620px;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('/src/images/details-hotel/desk/hotel.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url('/src/images/details-hotel/desk/hotel@2x.jpg');
+      }
+    }
+  }
+  &__content {
+    margin-right: 125px;
+
+    @media screen and (min-width: 1024px) {
+      text-align: end;
+      margin-right: 278px;
+    }
+    @media screen and (min-width: 1280px) {
+      // margin-left: 323px;
+      margin-right: 317px;
+    }
+  }
+  &__logo {
+    padding-top: 24px;
+    margin: 0;
+    text-align: end;
+    font-family: 'filmp3', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #ffffff;
+    letter-spacing: 0.3em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 48px;
+      font-size: 64px;
+    }
+  }
+  &__title {
+    text-align: end;
+    margin: 0;
+    padding-top: 12px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 12px;
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-left: 16px;
+    padding-top: 16px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #bababa;
+    letter-spacing: 0.02em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 12px;
+      margin-left: 182px;
+      font-size: 16px;
+      line-height: 1.25;
+      text-align: start;
+    }
+  }
+}
+.hotel-btn {
+  width: 236px;
+  height: 48px;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 82px;
+    margin-left: 32px;
+  }
+
+  &__number {
+    margin-bottom: 16px;
+  }
+
+  &__number,
+  &__price {
+    width: 236px;
+    height: 48px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #f3c653;
+    font-size: 16px;
+    line-height: 1.25px;
+    &:hover {
+      background: #ffffff;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    background: #000000;
+  }
+  @media screen and (min-width: 1280px) {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+.hotel-galery {
+  margin-top: 52px;
+  &__img {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    @media screen and (max-width: 1023px) {
+      margin-left: -15px;
+    }
+    @media screen and (min-width: 1024px) {
+      flex-direction: row-reverse;
+      // margin-right: 35px;
+    }
+    @media screen and (min-width: 1280px) {
+      flex-direction: row;
+      // margin-right: 35px;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-left: 0;
+      margin-right: 0px;
+      &:not(:first-child) {
+        margin-left: 34px;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      &:not(:nth-child(2)) {
+        margin-left: 86px;
+      }
+    }
+  }
+}
+.arrows-btn {
+  margin-top: 16px;
+  margin-left: 260px;
+  @media screen and (min-width: 1024px) {
+    // margin-top: 24px;
+    margin-left: 599px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 24px;
+    margin-left: 813px;
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 34px;
+  }
+}
+.mob-hidden {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+.tablet-hidden {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+.desktop-hidden {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.shown {
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+.wrap {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+}
