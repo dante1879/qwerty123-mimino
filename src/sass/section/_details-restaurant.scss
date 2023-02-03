@@ -245,6 +245,8 @@
   display: flex;
   gap: 32px;
   padding-left: 40px;
+  fill: #fff;
+
   @media screen and (min-width: 1024px) {
     padding: 0;
   }
@@ -252,4 +254,10 @@
 .swiper-btn {
   background-color: transparent;
   border: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  &:hover svg {
+    fill: #f3c653;
+  }
 }
