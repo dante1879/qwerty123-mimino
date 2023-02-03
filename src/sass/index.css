@@ -2660,6 +2660,7 @@ body.lock {
   overflow-y: scroll;
 }
 .backdrop--hidden {
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -2679,10 +2680,12 @@ body.lock {
   .book-table-modal {
     max-width: 712px;
     width: 712px;
+    height: 522px;
     padding: 60px;
   }
 }
-.backdrop--hidden .book-table-modal {
+
+.backdrop--hidden {
   position: absolute;
   top: 50%;
   left: 50%;
