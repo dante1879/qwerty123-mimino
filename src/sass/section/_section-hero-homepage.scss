@@ -1,7 +1,7 @@
 .section-hero {
   
   position: relative;
-  max-width: 414px;
+  // max-width: 414px;
   min-height: 740px;
   padding-top: 181px;
   
@@ -27,7 +27,7 @@
 @media screen and (min-width: 1024px){
 .section-hero{
  
-  max-width: 1024px;
+  // max-width: 1024px;
   min-height: 720px;
   padding-top: 188px;
  
@@ -55,7 +55,7 @@ background-image: linear-gradient(to right,
 @media screen and (min-width: 1280px) {
   .section-hero {
     position: relative;
-    max-width: 1280px;
+    // max-width: 1280px;
     min-height: 720px;
     padding-top: 164px;
    
@@ -86,6 +86,8 @@ background-image: linear-gradient(to right,
   width: 414px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -345,8 +347,8 @@ font-family: 'Montserrat-SemiBold';
   position: static;
   display: block;
   @media screen and (min-width: 1024px){
-display: flex;
-
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   }
   
