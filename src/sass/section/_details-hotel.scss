@@ -77,17 +77,17 @@
     }
   }
   &__content {
-    width: 243px;
+    max-width: 243px;
 
     @media screen and (min-width: 1024px) {
-      width: auto;
+      max-width: 738;
       text-align: end;
-      margin-right: 263px;
+      // margin-right: 263px;
       // margin-right: 278px;
     }
     @media screen and (min-width: 1280px) {
-      width: auto;
-      margin-right: 317px;
+      max-width: 927;
+      // margin-right: 317px;
     }
   }
   &__logo {
