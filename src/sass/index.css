@@ -2820,7 +2820,7 @@ select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-image: url(/src/images/table-booking/arrow-down.svg);
+  background-image: url(/src/images/modal/arrow-down.svg);
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: right 17px top 15px;
