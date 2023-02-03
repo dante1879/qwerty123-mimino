@@ -1,10 +1,21 @@
 .container-hotel {
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 414px;
+  height: 735px;
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    height: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }
 .details-hotel {
   margin-left: auto;
   margin-right: auto;
-  max-width: 414px;
+  min-width: 414px;
   min-height: 735px;
   background-size: 414px 735px;
   background-size: cover;
@@ -29,7 +40,7 @@
     }
   }
   @media screen and (min-width: 1024px) {
-    max-width: 1024px;
+    min-width: 1024px;
     height: 620px;
     // background-size: 1024px 620px;
     background-color: cover;
@@ -54,7 +65,7 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    min-width: 1280px;
     background-size: cover;
     background-image: linear-gradient(
         to right,
