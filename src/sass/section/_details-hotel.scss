@@ -1,9 +1,20 @@
 .container-hotel {
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 414px;
+  height: 735px;
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    height: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }
 .details-hotel {
   margin-left: auto;
-  margin-left: auto;
+  margin-right: auto;
   min-width: 414px;
   min-height: 735px;
   background-size: 414px 735px;
@@ -77,17 +88,17 @@
     }
   }
   &__content {
-    width: 243px;
+    max-width: 243px;
 
     @media screen and (min-width: 1024px) {
-      width: auto;
+      max-width: 738;
       text-align: end;
-      margin-right: 263px;
+      // margin-right: 263px;
       // margin-right: 278px;
     }
     @media screen and (min-width: 1280px) {
-      width: auto;
-      margin-right: 317px;
+      max-width: 927;
+      // margin-right: 317px;
     }
   }
   &__logo {
