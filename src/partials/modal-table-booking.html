@@ -1,86 +1,85 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студія</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    
-   
-    <div class="backdrop" data-modal>
-      <div class="book-table-modal">
-        <button type="button" class="close" aria-label="Кнопка закриття модального вікна" data-modal-close>
-          <svg class="close__icon">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
 
-        <form class="form">
-          <b class="form__title">ЗАБРОНЮВАТИ СТОЛИК</b>
 
-          
-          <div class="div">
-            <div class="container">
-          <div class="form__field">
-              <input class="form__input" 
-                type="text" 
-                name="user_name" 
-                id="user_name"
-                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,}"
-                required 
-                placeholder="Ваше ім’я"/>
-              <label for="user_name" class="modal-table__label">На кого забронювати столик?</label>
-            </div>
+<div class="book-table-modal popup" data-popup-target="table-booking-modal">
+  <button
+    type="button"
+    class="close"
+    aria-label="Кнопка закриття модального вікна"
+    data-modal-close
+  >
+    <svg class="close__icon">
+      <use href="/src/images/table-booking/modal-icons.svg"></use>
+    </svg>
+  </button>
 
-          <div class="form__field">
-              <input class="form__input" 
-                type="tel" 
-                name="phone_number" 
-                id="phone_number" 
-                required
-                pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){12}(\s*)?"
-                placeholder="+38 (___) ___-__-__" />
-            <label for="phone_number" class="modal-table__label">Номер телефону</label>
-          </div>
-          </div>
+  <form class="form">
+    <b class="form__title">ЗАБРОНЮВАТИ СТОЛИК</b>
 
-          <div class="container">
-          <div class="form__field">
-            <select name="people" class="form__input" id="number-of-persons">
-                <option value="1">1</option>
-                <option value="2" selected>2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select> 
-            <label for="number-of-persons" class="modal-table__label">Столик на яку кількість осіб?</label>
-          </div>
+    <div class="div">
+      <div class="modal-container">
+        <div class="form__field">
+          <input
+            class="form__input"
+            type="text"
+            name="user_name"
+            id="user_name"
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,}"
+            required
+            placeholder="Ваше ім’я"
+          />
+          <label for="user_name" class="modal-table__label"
+            >На кого забронювати столик?</label
+          >
+        </div>
 
-          <div class="form__field">
-            <select name="date" class="form__input" id="booking-date">
+        <div class="form__field">
+          <input
+            class="form__input"
+            type="tel"
+            name="phone_number"
+            id="phone_number"
+            required
+            pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){12}(\s*)?"
+            placeholder="+38 (___) ___-__-__"
+          />
+          <label for="phone_number" class="modal-table__label"
+            >Номер телефону</label
+          >
+        </div>
+      </div>
+
+      <div class="modal-container">
+        <div class="form__field">
+          <select name="people" class="form__input" id="number-of-persons">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <label for="number-of-persons" class="modal-table__label"
+            >Столик на яку кількість осіб?</label
+          >
+        </div>
+
+        <div class="form__field">
+          <select name="date" class="form__input" id="booking-date">
             <option value="06.12.22" selected>Сьогодні</option>
             <option value="07.12.22">03.02.23</option>
             <option value="08.12.22">04.02.23</option>
             <option value="09.12.22">05.02.23</option>
             <option value="10.12.22">06.02.23</option>
             <option value="11.12.22">07.02.23</option>
-            </select>
-           <label for="booking-date" class="modal-table__label">На яку дату бронювати?</label>
-          </div>
-          </div>
-          </div>
-
-          <button type="submit" class="form__button">ОФОРМИТИ БРОНЮВАННЯ</button>
-        </form>
+          </select>
+          <label for="booking-date" class="modal-table__label"
+            >На яку дату бронювати?</label
+          >
+        </div>
       </div>
     </div>
-    <!-- <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script> -->
-  </body>
-</html>
+
+    <button type="submit" class="form__button">ОФОРМИТИ БРОНЮВАННЯ</button>
+  </form>
+</div>
+
