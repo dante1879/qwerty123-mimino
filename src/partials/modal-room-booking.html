@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+       
+    <!-------------------------- Модальне вікно -------------------------------->
+   
+    <div class="backdrop" data-modal>
+      <div class="book-room-modal">
+        <button type="button" class="close" aria-label="Кнопка закриття модального вікна" data-modal-close>
+          <svg class="close__icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form class="form">
+          <b class="form__title">ЗАБРОНЮВАТИ НОМЕР</b>
+<div class="flex-container">
+      <div class="form__container">
+          <div class="form__field">
+              <input class="form__input" 
+                type="text" 
+                name="user_name" 
+                id="user_name"
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,}"
+                required 
+                placeholder="Ваше ім’я"/>
+              <label for="user_name" class="modal-room__label">На кого забронювати номер?</label>
+            </div>
+
+          <div class="form__field">
+              <input class="form__input" 
+                type="tel" 
+                name="phone_number" 
+                id="phone_number" 
+                required
+                pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){12}(\s*)?"
+                placeholder="+38 (___) ___-__-__" />
+            <label for="phone_number" class="modal-room__label">Номер телефону</label>
+          </div>
+          </div>
+
+          <div class="form__container">
+            <div class="form__field">
+            <select name="people" class="form__input" id="number-of-persons">
+                <option value="" selected>Двомісний номер Люкс</option>
+                <option value="">Трьохмісний номер</option>
+                <option value="">Двомісний номер</option>
+            </select> 
+            <label for="number-of-persons" class="modal-room__label">Категорія номеру</label>
+          </div>
+          </div>
+
+          <div class="form__container">
+          <div class="form__field">
+            <select name="date" class="form__input" id="booking-date">
+            <option value="" selected>Сьогодні</option>
+            <option value="">05.02.2023</option>
+            <option value="">06.02.2023</option>
+            </select>
+           <label for="booking-date" class="modal-room__label">Дата заїзду</label>
+          </div>
+
+          <div class="form__field">
+            <select name="date" class="form__input" id="booking-date">
+            <option value="" selected>Завтра</option>
+            <option value="">07.02.2023</option>
+            <option value="">08.02.2023</option>
+            </select>
+           <label for="booking-date" class="modal-room__label">Дата виїзду</label>
+          </div>
+          </div>
+          </div>
+          
+          <button type="submit" class="form__button">ОФОРМИТИ БРОНЮВАННЯ</button>
+        </form>
+      </div>
+    </div>
+    <!-- <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script> -->
+  </body>
+</html>

@@ -58,7 +58,45 @@ hr {
 }
 
 @font-face {
-  font-family: 'filmp3';
-  src: url(/src/fonts/filmp3.ttf) format('ttf');
+  font-family: 'FilmP3';
+  font-style: normal;
   font-weight: 700;
+  src: local(''), url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff');
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
